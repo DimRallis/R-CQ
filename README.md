@@ -6,7 +6,7 @@ The detection of Y regions is amenable due to the absence of actual genomic data
 Each assembly region is assessed for the Male-depth/Female-depth ration on a sequence window based manner, where the window size is determined by the user (default is 100 bp). 
 
 R-CQ algorithm takes as input two .bw coverage files from the independent alignment of male and female DNA reads on the query genome. 
-Users are highly recommended to either use the GSNAP alignment algorithm for aligning reads, and then feeding R-CQ with the concordant unique reads, or use other tools (eg. samtools) to filter repetitive and halfmapping reads. 
+Users are highly recommended to either use the GSNAP alignment algorithm for aligning reads, and then feeding R-CQ with the concordant_unique reads, or use other tools (eg. samtools) to filter repetitive and halfmapping reads. 
 The algorithm also requires the ID of an autosomal contig for normalizing depth differences between male and female datasets. 
 Users have the option to use an automatic repeat cutoff filter that excludes windows with repetitive sequences from the analysis, manually set the repeat cutoff or deactivate the function. 
 
